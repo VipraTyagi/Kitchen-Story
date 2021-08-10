@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+     <!-- Internal Style -->
+     <style>
+       /* body {
+        background:url(restaurant_1.jpeg)no-repeat;
+        background-size: cover;
+
+      } */
+      h1{
+        color: white;
+      }
+      h3{
+        color: white;
+      }
+    
+     </style>
+     <!-- <link
+       rel="stylesheet"
+       href="vendor/bootstrap-4.6.0-dist/css/bootstrap.min.css"
+     /> -->
+     <link
+       rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+       crossorigin="anonymous"
+     />
+</head>
+<body>
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="D:\FSD FrontEnd\Project\ProjecMain.html">Home
+        <button type="button" class="btn btn-link" ></button>
+    </a>
+    <a class="breadcrumb-item" href="D:\FSD FrontEnd\Project\Project Products.html">Products
+        <button type="button" class="btn btn-link"></button>
+    </a>
+    <a type="button" class="breadcrumb-item active">Order Confirmation
+      
+    </a>
+    </nav>
+    <h1>Your food products are </h1>
+    <br>
+    <h3>Paav bhaji</h3>
+      <p class="price">Rs 80</p>
+      <h3>Masala Dosa</h3>
+      <p class="price">Rs 120</p>
+
+      <p>Click confirm to place your order</p>
+
+      <button onclick="myFunction()" text-align: center >Confirm</button>
+      
+      <p id="demo"></p>
+      
+      <script>
+      function myFunction() {
+        var txt;
+        var r = confirm("Click Ok for confirming the order");
+        if (r == true) {
+          txt = "Your order is confirmed";
+        } else {
+          txt = "Your order is cancelled";
+        }
+        document.getElementById("demo").innerHTML = txt;
+      }
+      </script>
+
+
+
+
+   
+
+
+
+    <hr/>
+
+    <!-- <script src="vendor/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html
+    
